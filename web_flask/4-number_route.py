@@ -29,6 +29,7 @@ def python_dynamic(text='is_cool'):
     """dynamic w/ defaults"""
     return "Python {}".format(text.replace('_', ' '))
 
+
 @app.route('/number/<int:n>', strict_slashes=False)
 def only_digits_dynamic(n=None):
     """type specific routing"""
